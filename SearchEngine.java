@@ -11,8 +11,13 @@ class Searching implements URLHandler {
         if (url.getPath().equals("/")) {
             return String.format("Your String Searcher tracker to Go!");
         } 
+
+        if (url.getPath().equals("/add")){
+            return String.format("Please specify what you want to add!");
+        }
         
         else if (url.getPath().contains("/add")) {
+
             String[] parameters = url.getQuery().split("=");
                 if (parameters[1].equals("app")){
                     return String.format("Searches so far: %s", pencil);
