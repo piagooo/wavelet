@@ -19,8 +19,7 @@ class Searching implements URLHandler {
                 }
 
                 pencil += (parameters[1] + ", ");
-                return String.format("Okay Searched!");
-
+                return String.format("Okay Searched!: " + parameters[1] );
             
             
         } 
@@ -30,12 +29,6 @@ class Searching implements URLHandler {
         }
     }
 }
-
-
-
-
-
-
 
 class SearchEngine {
     public static void main(String[] args) throws IOException {
